@@ -1,0 +1,10 @@
+name: First Workflow #Nombre del Workflow
+on: workflow_dispatch #Evento a disparar el workflow - workflow_dispatch: de forma manual
+jobs: # Lista de Jobs a realizar en el WorkFlow
+  first-job: trabajo 1
+    runs-on: ubuntu-latest
+    steps: 
+     - name: Print greeting
+       run: echo "Hello World!"
+     - name: Print Goodbye
+       run: echo "Done - Bye!"
